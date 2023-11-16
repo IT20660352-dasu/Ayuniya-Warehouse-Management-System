@@ -67,4 +67,4 @@
         </ul>
     </section>
     <!-- /.sidebar -->
-</aside><!-- visit "codeastro" for more projects! -->
+</aside> <!-- ./ -->

@@ -11,17 +11,17 @@ function format_uang ($angka) {
 //     "Eight",   "Nine",      "Ten",      "Eleven",
 //     "Twelve",  "Thirteen",  "Fourteen", "Fifteen",
 //     "Sixteen", "Seventeen", "Eighteen", "Nineteen");
-// visit "codeastro" for more projects!
+//
 //     $tens = array("",      "Twenty",  "Thirty", "Forty", "Fifty",
 //     "Sixty", "Seventy", "Eighty", "Ninety");
 //     $terbilang = '';
 
 //     if ($angka < 20) { // 0 - 14
 //         $terbilang = ' ' . $baca[$angka];
-//     } 
+//     }
 //     elseif ($angka < 20) { // 14 - 19
 //         $terbilang = terbilang($angka -10) . 'teen';
-//     } 
+//     }
 //     elseif ($angka < 100) { // 20 - 99
 //         $terbilang = terbilang($angka / 10) . ' tens' . terbilang($angka % 10);
 //     } elseif ($angka < 200) { // 100 - 199
@@ -38,7 +38,7 @@ function format_uang ($angka) {
 
 //     return $terbilang;
 // }
-// visit "codeastro" for more projects!
+//
 // function terbilang($angka)
 // {
 //     $angka = abs($angka);
@@ -111,7 +111,7 @@ function terbilang($angka)
 
     return $terbilang;
 }
-// visit "codeastro" for more projects!
+//
 function tanggal_indonesia($tgl, $tampil_hari = true)
 {
     $nama_hari  = array(
@@ -133,10 +133,10 @@ function tanggal_indonesia($tgl, $tampil_hari = true)
     } else {
         $text       .= "$tanggal $bulan $tahun";
     }
-    
-    return $text; 
+
+    return $text;
 }
-// visit "codeastro" for more projects!
+//
 function tambah_nol_didepan($value, $threshold = null)
 {
     return sprintf("%0". $threshold . "s", $value);

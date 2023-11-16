@@ -89,7 +89,7 @@
                                 </div>
                             </div>
                         </td>
-                        
+
                         @if (count($datamember) == 1)
                         <td class="text-center" style="width: 50%;"></td>
                         @endif
@@ -98,5 +98,5 @@
             @endforeach
         </table>
     </section>
-</body><!-- visit "codeastro" for more projects! -->
+</body> <!-- ./ -->
 </html>

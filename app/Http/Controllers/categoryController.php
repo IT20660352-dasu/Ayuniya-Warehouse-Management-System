@@ -45,7 +45,7 @@ class categoryController extends Controller
     {
         //
     }
-    // visit "codeastro" for more projects!
+    //
     /**
      * Store a newly created resource in storage.
      *

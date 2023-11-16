@@ -38,7 +38,7 @@ List of Outlet Customers
         </div>
     </div>
 </div>
-<!-- visit "codeastro" for more projects! -->
+ <!-- ./ -->
 @includeIf('member.form')
 @endsection
 

@@ -148,7 +148,7 @@ class ProdukController extends Controller
 
         return response(null, 204);
     }
-    // visit "codeastro" for more projects!
+    //
     public function cetakBarcode(Request $request)
     {
         $dataproduk = array();

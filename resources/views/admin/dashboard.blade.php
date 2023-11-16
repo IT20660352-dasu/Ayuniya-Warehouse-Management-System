@@ -26,7 +26,7 @@
             <a href="{{ route('category.index') }}" class="small-box-footer">View <i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
-    <!-- ./col --><!-- visit "codeastro" for more projects! -->
+    <!-- ./col --> <!-- ./ -->
     <div class="col-lg-3 col-xs-6">
         <!-- small box -->
         <div class="small-box bg-purple">
@@ -48,7 +48,7 @@
             <div class="inner">
                 <h3>{{ $member }}</h3>
 
-                <p>Total Member</p>
+                <p>Total Outlet Customers</p>
             </div>
             <div class="icon">
                 <i class="fa fa-id-card"></i>
@@ -79,10 +79,10 @@
 
 
     <!-- ./col -->
-    <!-- visit "codeastro" for more projects! -->
-  
+     <!-- ./ -->
 
-    <!-- visit "codeastro" for more projects! -->
+
+     <!-- ./ -->
 </div>
 <!-- Main row -->
 <div class="row">

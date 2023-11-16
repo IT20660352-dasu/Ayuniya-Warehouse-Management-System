@@ -22,6 +22,6 @@
             </div>
         </div>
     </div>
-</div><!-- visit "codeastro" for more projects! -->
+</div> <!-- ./ -->
 <!-- /.row (main row) -->
 @endsection
