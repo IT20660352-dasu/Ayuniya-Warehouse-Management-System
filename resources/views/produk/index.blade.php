@@ -32,7 +32,7 @@
                             <th>Code</th>
                             <th>Name</th>
                             <th>Category</th>
-                            <th>Brand</th>
+                            <th>Outlet Name</th>
                             <th>Retail Price</th>
                             <th>Wholesale Price</th>
                             <th>Discount</th>
@@ -68,7 +68,14 @@
                 {data: 'kode_produk'},
                 {data: 'nama_produk'},
                 {data: 'name_category'},
-                {data: 'merk'},
+                {
+        data: 'merk',
+        render: function(data) {
+            // Assuming 'data' contains the serialized array of outlet names
+            var outlets = Array.isArray(data) ? data.join(', ') : data;
+            return outlets;
+        }
+    },
                 {data: 'harga_beli'},
                 {data: 'harga_jual'},
                 {data: 'diskon'},

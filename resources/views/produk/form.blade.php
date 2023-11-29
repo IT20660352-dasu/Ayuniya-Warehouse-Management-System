@@ -31,23 +31,29 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="merk" class="col-lg-2 col-lg-offset-1 control-label">Brand</label>
+                        <label for="merk" class="col-lg-2 col-lg-offset-1 control-label">Outlet Name</label>
                         <div class="col-lg-6">
-                            <input type="text" name="merk" id="merk" class="form-control">
+                            <select name="merk[]" multiple="multiple" id="merk" class="form-control" required>
+
+                                <option value="outlet 01"> Outlet 01</option>
+                                <option value="outlet 02"> Outlet 02</option>
+                                <option value="outlet 03"> Outlet 03</option>
+                                <option value="outlet 04"> Outlet 04</option>
+                            </select>
                             <span class="help-block with-errors"></span>
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="harga_beli" class="col-lg-2 col-lg-offset-1 control-label">Retail Price</label>
                         <div class="col-lg-6">
-                            <input type="number" name="harga_beli" id="harga_beli" class="form-control" required>
+                            <input type="number" name="harga_beli" id="harga_beli" class="form-control" value="600" required>
                             <span class="help-block with-errors"></span>
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="harga_jual" class="col-lg-2 col-lg-offset-1 control-label">Wholesale Price</label>
                         <div class="col-lg-6">
-                            <input type="number" name="harga_jual" id="harga_jual" class="form-control" required>
+                            <input type="number" name="harga_jual" id="harga_jual" class="form-control" value="500" required>
                             <span class="help-block with-errors"></span>
                         </div>
                     </div>

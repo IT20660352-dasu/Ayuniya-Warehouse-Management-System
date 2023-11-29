@@ -79,12 +79,18 @@ class ProdukController extends Controller
     public function store(Request $request)
     {
         $produk = Produk::latest()->first() ?? new Produk();
-        $request['kode_produk'] = 'P'. tambah_nol_didepan((int)$produk->id_produk +1, 6);
+        $request['kode_produk'] = 'P' . tambah_nol_didepan((int)$produk->id_produk + 1, 6);
+
+        // Serialize the "merk" array before storing it
+        $request['merk'] = serialize($request->merk);
 
         $produk = Produk::create($request->all());
 
         return response()->json('Data saved successfully', 200);
     }
+
+
+
 
     /**
      * Display the specified resource.
