@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Sample Upload</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="/" class="flex items-center gap-2.5 text-xl font-bold text-gray-800">
+                <img src="{{url_for('static', filename='logo.jpeg')}}" style="display: block; width: 70px; height: 70px;" alt="Flowrift" class="h-auto w-12">
+                <span>LEND A HAND</span>
+            </a>
+
+            <!-- Navigation -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="#" class="text-gray-600 hover:text-gray-800">Home</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">About</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">Contact</a>
+                <!-- Add more navigation links here -->
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button class="text-gray-600 hover:text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <body class="bg-red-100">
+       
+            
+
+       
+
+        <!-- Testimonials -->
+        <section class="bg-red-200 py-16">
+            <div class="container mx-auto">
+                
+                          
+                            
+                                <img src="{{ url_for('static', filename='hair_r.png') }}" alt="Step 3 Image" class="mx-auto w-100px h-auto mb-4">
+                                </div>
+         {% if prediction %}
+            <h1 class="text-center"> Image is a {{prediction}}</h1>
+        {% endif %}
+               
+    </body>
+
+    <!-- Footer -->
+    <div class="bg-white pt-4 sm:pt-10 lg:pt-32">
+        <footer class="mx-auto max-w-screen-2xl px-4 md:px-8">
+            <div class="flex flex-col items-center border-t pt-6">
+                <nav class="mb-4 flex flex-wrap justify-center gap-x-4 gap-y-2 md:justify-start md:gap-6">
+                    <a href="#" class="text-gray-500 hover:text-indigo-500">About</a>
+                    <a href="#" class="text-gray-500 hover:text-indigo-500">Investor Relations</a>
+                    <a href="#" class="text-gray-500 hover:text-indigo-500">Jobs</a>
+                    <a href="#" class="text-gray-500 hover:text-indigo-500">Press</a>
+                    <a href="#" class="text-gray-500 hover:text-indigo-500">Blog</a>
+                </nav>
+                <div class="flex gap-4">
+                    <a href="#" target="_blank" class="text-gray-400 hover:text-gray-500">
+                        <!-- Social media icons -->
+                    </a>
+                </div>
+            </div>
+            <div class="py-8 text-center text-sm text-gray-400">
+                © 2024 - Apeksha Hospital Donor Engagement System
+            </div>
+        </footer>
+    </div>
+    <!-- Footer End -->
+
+
+
+</body>
+
+</html>
